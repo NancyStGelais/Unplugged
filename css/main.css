@@ -135,7 +135,7 @@ textarea {
     
    .content-wrapper {
      width: 90%;
-     margin: 50px 0;
+     margin: 50px 18px 50px 30px;
    }
    
 
@@ -160,6 +160,7 @@ textarea {
 
  header .content-wrapper {
    margin: 0;
+   padding-right: 50px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -173,11 +174,15 @@ textarea {
   width: 100%;
  }
 
+ header .figure {
+   width: 100%;
+ }
+
  header nav {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  width: 60%;
+  width: 90%;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -195,32 +200,43 @@ header nav ul li {
 }
 
 footer {
+  
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
+
 footer p {
   margin: 0;
 }
+
 footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
 }
 
+
+
+
 .footer-contact { 
   margin-bottom: 50px;
 } 
+
+
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 footer .copyright {
@@ -232,11 +248,14 @@ footer .copyright {
 /* Hero Area */
 
  .hero-area {
-  display:flex;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+  display: flex;
   justify-content: center;
   flex-flow: row wrap;
  }
  
+
 
 
  .hero-area h1 {
@@ -249,15 +268,16 @@ footer .copyright {
 
 /* Aside */
 
- aside{
+ aside {
   background-color: #527158;
   color: #b2bdbb;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
  }
+
+ 
  
  aside .form {
   margin-top: 30px;
@@ -288,6 +308,8 @@ input[type=button] {
  /* Features */
 
  .features {
+   background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat;
+   background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -295,6 +317,7 @@ input[type=button] {
 
  .features h2 {
    margin-bottom: 60px;
+   padding: 0 15px 0 10px;
  }
 
  .features article {
@@ -323,15 +346,38 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
  }
+ 
 
  .reviews h2 {
-   line-height: 1em;
-   margin-bottom: 40px;
+  line-height: 1;
+  margin-bottom: 40px;
  }
+
+.reviews-artcle {
+  width: 100%;
+  
+ 
+}
+ .reviews img {
+   width: 100%;
+  }
+
+ .reviews figure {
+   width: 98%;
+   margin: 0;
+  
+   justify-content: center;
+   align-items: center; 
+   flex-flow: row wrap;
+ }
+
  .reviews h3 {
   margin: 20px 0;
   width: 55%;
  }
+
+ 
+ 
 
  
 /*-------------------------- Mobile About Styles --------------------------*/
@@ -514,7 +560,7 @@ input[type=button] {
       width: 30%;
     }
 
-    }
+  
   
     header nav {
         width: 30%; 
@@ -662,103 +708,104 @@ input[type=button] {
       font-size: .875em;
       line-height: 1.125;
     }
-  }
+  } 
   
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
   
-header {
-  padding: 15px 0;
-} 
+    header {
+      padding: 15px 0;
+    } 
 
-.content-wrapper {
-  max-width: 960px;
-}
-h2 {
-  font-size: 2.25em;
-}
+    .content-wrapper {
+      max-width: 960px;
+    }
 
-h3, h4 {
-  font-size: 1.875em;
-}
+    h2 {
+      font-size: 2.25em;
+    }
 
-p {
-  font-size: 1.125em;
-  line-height: 1.333;
-}
+    h3, h4 {
+      font-size: 1.875em;
+    }
 
-/* Hero */
+    p {
+      font-size: 1.125em;
+      line-height: 1.333;
+    }
 
-.hero-area h1 {
-  font-size: 3.75em;
-  width: 60%;
-}
+    /* Hero */
 
-/* Aside */
+    .hero-area h1 {
+      font-size: 3.75em;
+      width: 60%;
+    }
 
-aside .content-wrapper {
-  justify-content: space-around;
-}
+     /* Aside */
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 30%;
-}
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
 
-.form-description p {
-  font-size: 1.125em;
-}
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
 
-/* Features */
+    .form-description p {
+      font-size: 1.125em;
+    }
 
-.features h2 {
- width: 90%; 
-}
+    /* Features */
 
-.features article {
- flex-basis: 33%;
-}
+    .features h2 {
+       width: 90%; 
+    }
 
-/* Reviews */ 
+    .features article {
+      flex-basis: 33%;
+    }
 
-.reviews h2 {
-  padding-bottom: 50px;
-}
+    /* Reviews */ 
 
-.reviews article div {
- width: 42%;
-}
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
 
-footer h4 {
-  font-size: 1.875em;
-}
+    .reviews article div {
+      width: 42%;
+    }
 
-/* ==========================================================================
-About Page
-========================================================================== */
+    footer h4 {
+      font-size: 1.875em;
+    }
 
-.mission h2,
-.contact-section .content-wrapper h2 {
-  font-size: 3em;
-  width: 95%;
-}
+  /* ==========================================================================
+    About Page
+    ========================================================================== */
 
-.contact-content h4 {
-  font-size: 1.875em;
-}
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      font-size: 3em;
+      width: 95%;
+    }
 
-/* ==========================================================================
-FAQ Page
-========================================================================== */
-.faq h2 {
- width: 100%;
- font-size: 3em;
-}
+    .contact-content h4 {
+      font-size: 1.875em;
+    }
 
-.faq h4, .faq p {
-  font-size: 1.125em;
-  line-height: 1;
-}
+    /* ==========================================================================
+    FAQ Page
+    ========================================================================== */
+    .faq h2 {
+      width: 100%;
+      font-size: 3em;
+    }
+
+    .faq h4, .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+    }
 }
 
 @media print,
