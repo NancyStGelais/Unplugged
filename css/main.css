@@ -559,8 +559,6 @@ input[type=button] {
     header .img {
       width: 30%;
     }
-
-  
   
     header nav {
         width: 30%; 
@@ -579,13 +577,14 @@ input[type=button] {
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
-    margin: 0;
+    margin: 0 20px 250px 20px;;
   }
 
     /* Aside */
 
     aside .content-wrapper {
-        margin: 50px 0;
+        margin: 30px 0;
+        padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
@@ -601,6 +600,7 @@ input[type=button] {
   
    .features h2 {
        margin-bottom: 20px;
+       padding: 0;
     }
 
     .features article {
@@ -616,25 +616,50 @@ input[type=button] {
     }
   
     /* Reviews */
+  
+    .reviews .content-wrapper {
+      width: 100%;
+    } 
 
-    .reviews article {
-        display: flex;
-        justify-content: space-between;
-    }
-    
     .reviews h2 {
       width: 85%;
     }
+    
+    .reviews .article {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .reviews article div {
-        width: 49%;       
+      width: 100%;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .reviews .figure {
+      margin: 0;
+      width: 48%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .reviews img {
+      height: 198px;
+      width: 306px;
     }
 
     .reviews h3 {
       margin: 0;
-      width: 75%;
+      width: 48%;
+      
     }
   
+    .reviews p {
+      width: 48%;
+      
+    }
     /* Footer */
 
     footer .content-wrapper {
@@ -738,7 +763,8 @@ input[type=button] {
 
     .hero-area h1 {
       font-size: 3.75em;
-      width: 60%;
+      padding-bottom: 120px;
+      width: 80%;
     }
 
      /* Aside */
