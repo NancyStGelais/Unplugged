@@ -128,6 +128,14 @@ textarea {
      font-size: .875em;
      line-height: 1.285em;
    }
+
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin:0;
+   }
     
    address {
     font-style: normal;
@@ -167,22 +175,27 @@ textarea {
    flex-flow: row wrap; 
  }
 
+ header .figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   background-color: #3a3a3a;
   margin: 10px 0 20px 0;
   height: 1px;
   width: 100%;
- }
-
- header .figure {
-   width: 100%;
+ 
  }
 
  header nav {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  width: 90%;
+  width: 60%;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -193,18 +206,15 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
- }
+}
 
 header nav ul li {
   font-size: 1.125em;
 }
 
 footer {
-  
-  display: flex;
   flex-direction: column;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 footer p {
@@ -216,27 +226,20 @@ footer .content-wrapper {
     margin: 50px 0;
 }
 
-
-
-
-.footer-contact { 
+footer .footer-contact { 
   margin-bottom: 50px;
 } 
-
-
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 footer .copyright {
@@ -250,14 +253,12 @@ footer .copyright {
  .hero-area {
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
  }
  
-
-
-
  .hero-area h1 {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.25em;
@@ -310,9 +311,9 @@ input[type=button] {
  .features {
    background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat;
    background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+   display: flex;
+   justify-content: center;
+   flex-flow: row wrap;
  }
 
  .features h2 {
@@ -347,38 +348,19 @@ input[type=button] {
   flex-flow: row wrap;
  }
  
-
  .reviews h2 {
   line-height: 1;
   margin-bottom: 40px;
  }
 
-.reviews-artcle {
-  width: 100%;
-  
- 
-}
  .reviews img {
-   width: 100%;
-  }
-
- .reviews figure {
-   width: 98%;
-   margin: 0;
-  
-   justify-content: center;
-   align-items: center; 
-   flex-flow: row wrap;
+   width: 97%;
  }
 
  .reviews h3 {
   margin: 20px 0;
   width: 55%;
  }
-
- 
- 
-
  
 /*-------------------------- Mobile About Styles --------------------------*/
 
@@ -534,6 +516,7 @@ input[type=button] {
       max-width: 640px;
       margin: 100px 0;
     }
+
     h2 {
       font-size: 2.25em;
       line-height: 1.333;
@@ -556,7 +539,7 @@ input[type=button] {
         
     }
 
-    header .img {
+    header figure {
       width: 30%;
     }
   
@@ -574,16 +557,20 @@ input[type=button] {
   
     /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
-    margin: 0 20px 250px 20px;;
+    margin: 0;
   }
 
     /* Aside */
 
     aside .content-wrapper {
-        margin: 30px 0;
+        margin: 20px 0;
         padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
@@ -600,7 +587,6 @@ input[type=button] {
   
    .features h2 {
        margin-bottom: 20px;
-       padding: 0;
     }
 
     .features article {
@@ -616,50 +602,33 @@ input[type=button] {
     }
   
     /* Reviews */
-  
-    .reviews .content-wrapper {
-      width: 100%;
-    } 
 
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+    }
+  
     .reviews h2 {
       width: 85%;
     }
     
-    .reviews .article {
-      display: flex;
-      justify-content: space-between;
-    }
-
+    .reviews article figure {
+      width: 50%;
+    } 
     .reviews article div {
-      width: 100%;
-      display: flex;
-      justify-content: center; 
-      align-items: center;
-      flex-flow: row wrap;
-    }
-
-    .reviews .figure {
       margin: 0;
-      width: 48%;
-      display: flex;
-      justify-content: flex-start;
+      padding-left: 14px;
+      width: 50%; 
     }
 
-    .reviews img {
-      height: 198px;
-      width: 306px;
-    }
-
+    
     .reviews h3 {
-      margin: 0;
-      width: 48%;
-      
+      width: 75%;
+      margin: 0;  
     }
-  
-    .reviews p {
-      width: 48%;
-      
-    }
+
+    
+
     /* Footer */
 
     footer .content-wrapper {
@@ -763,7 +732,6 @@ input[type=button] {
 
     .hero-area h1 {
       font-size: 3.75em;
-      padding-bottom: 120px;
       width: 80%;
     }
 
@@ -794,12 +762,16 @@ input[type=button] {
 
     /* Reviews */ 
 
-    .reviews h2 {
-      padding-bottom: 50px;
-    }
+    .reviews article figure {
+      width: 50%;
+    } 
 
     .reviews article div {
-      width: 42%;
+      width: 47%; 
+    }
+
+    .reviews h2 {
+      padding-bottom: 50px;
     }
 
     footer h4 {
@@ -834,19 +806,19 @@ input[type=button] {
     }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
+@media print,
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 1.25dppx),
+   (min-resolution: 120dpi) {
+   /* Style adjustments for high resolution devices */
+ }
 @media print {
   *,
   *::before,
