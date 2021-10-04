@@ -175,12 +175,18 @@ textarea {
    flex-flow: row wrap; 
  }
 
- header .figure {
+ header figure {
+  margin: 0;
+  padding-left: 35px;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure img {
+  width: 100%;
 }
 
 .header-divider {
@@ -195,7 +201,7 @@ textarea {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
-  width: 60%;
+  width: 70%;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -371,6 +377,22 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .contact-section {
@@ -787,6 +809,8 @@ input[type=button] {
       font-size: 3em;
       width: 95%;
     }
+
+    
 
     .contact-content h4 {
       font-size: 1.875em;
