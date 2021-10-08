@@ -656,14 +656,12 @@ input[type=button] {
     }
     
     footer .footer-content {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-    }
-  
-    footer .contact {
-        margin-bottom: 0;
+
     }
 
     footer h4 {
@@ -672,12 +670,14 @@ input[type=button] {
     }
 
     footer .contact {
-      padding-right: 30px;
-      width: 100%;
+      margin-bottom: 0;
+      padding-right: 60px;
+      width: 30%;
     }
+
     footer .social {
-      padding-left: 30px;
-      width: 100%;
+      
+      width: 45%;
     }
 
     footer p {
@@ -806,6 +806,17 @@ input[type=button] {
 
     footer h4 {
       font-size: 1.875em;
+    }
+
+    footer .contact {
+      margin-bottom: 0;
+      padding-right: 60px;
+      width: 30%;
+    }
+
+    footer .social {
+      padding-left: 40px;
+      width: 30%;
     }
 
   /* ==========================================================================
